@@ -1,0 +1,26 @@
+{
+    "manifest_version": 2,
+    "name": "qucie",
+    "version": "1.0",
+  
+    "description": "qucie qucie",
+  
+    "icons": {
+      "48": "icons/48.png"
+    },
+    "content_scripts": [
+      {
+        "matches": ["*://*/*"],
+        "js": ["script.js"]
+      }
+    ],
+    "background": {
+        "scripts": ["background.js"]
+    },
+    "permissions": [
+        "*://*/*",
+        "webRequest",
+        "notifications",
+        "tabs"
+    ]
+  }
